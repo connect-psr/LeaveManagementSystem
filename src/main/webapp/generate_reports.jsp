@@ -154,6 +154,6 @@
     }
 %>
 </table>
-	<a class="back-btn" href="admin_dashboard.jsp">← Back to Dashboard </a>
+	<a class="back-btn" href="admin_dashboard.jsp">← Back to Dashboard</a>
 </body>
 </html>
