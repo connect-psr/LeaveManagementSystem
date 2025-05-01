@@ -73,6 +73,22 @@
             background-color: #1565c0;
             color: white;
         }
+        .back-btn {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 10px 20px;
+            text-align: center;
+            background-color: #00796b;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .back-btn:hover {
+            background-color: #004d40;
+        }
     </style>
 </head>
 <body>
@@ -138,6 +154,6 @@
     }
 %>
 </table>
-
+	<a class="back-btn" href="admin_dashboard.jsp">← Back to Dashboard</a>
 </body>
 </html>
