@@ -50,4 +50,13 @@
         <servlet-name>GenerateLeaveReportServlet</servlet-name>
         <url-pattern>/generate_leave_report</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>UpdatePasswordServlet</servlet-name>
+        <servlet-class>servlet.UpdatePasswordServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UpdatePasswordServlet</servlet-name>
+        <url-pattern>/updatePass</url-pattern>
+    </servlet-mapping>
 </web-app>
