@@ -99,7 +99,6 @@
             <th>Application Date</th>
             <th>Start Date</th>
             <th>End Date</th>
-            <th>Actions</th>
         </tr>
 
 <%
@@ -121,10 +120,6 @@
             <td><%= sdf.format(rs.getDate("submission_date")) %></td>
             <td><%= sdf.format(rs.getDate("start_date")) %></td>
             <td><%= sdf.format(rs.getDate("end_date")) %></td>
-            <td>
-                <a href="approve_leave.jsp?leave_id=<%= leaveId %>" class="action-btn">Approve</a>
-                <a href="reject_leave.jsp?leave_id=<%= leaveId %>" class="action-btn" style="background-color: red;">Reject</a>
-            </td>
         </tr>
 <%
         }
