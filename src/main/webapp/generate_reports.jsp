@@ -22,68 +22,110 @@
     <title>Generate Leave Reports</title>
     <style>
         body {
-            font-family: 'Segoe UI', sans-serif;
-            background: #e3f2fd;
-            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #80deea);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         h2 {
-            color: #0d47a1;
-            text-align: center;
+            color: #00796b;
+            margin-bottom: 20px;
+            font-size: 2rem;
         }
 
-        form {
-            margin: 20px auto;
-            text-align: center;
+        form label {
+            font-size: 1.1rem;
+            margin-right: 10px;
         }
 
         select {
             padding: 8px 12px;
             font-size: 14px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
         }
 
         input[type="submit"] {
-            padding: 8px 16px;
-            background-color: #1976d2;
+            padding: 10px 20px;
+            background-color: #00796b;
             color: white;
             border: none;
             cursor: pointer;
             border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
         }
 
         input[type="submit"]:hover {
-            background-color: #0d47a1;
+            background-color: #004d40;
         }
 
+        .generate_report_btn, .btn-download {
+	        padding: 10px 20px;
+	        background-color: #00796b;
+	        color: white;
+	        border: none;
+	        cursor: pointer;
+	        border-radius: 4px;
+	        font-weight: bold;
+	        font-size: 16px;  /* Same font size */
+	        line-height: 1.5; /* Adjust line height for consistent height */
+	        transition: background-color 0.3s ease;
+	        display: inline-block;
+	        text-decoration: none; /* Remove underline for the link */
+	        text-align: center;
+	    }
+	
+	    .generate_report_btn:hover, .btn-download:hover {
+	        background-color: #004d40;
+	    }
+	
+	    .btn-download {
+	        display: inline-block; /* Make sure the download button behaves like the generate button */
+	    }
+
         table {
-            width: 90%;
+            width: 80%;
             margin: 30px auto;
             border-collapse: collapse;
-            background-color: white;
-            box-shadow: 0 0 10px #ccc;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
         }
 
         th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
+            padding: 12px 20px;
             text-align: center;
+            border-bottom: 1px solid #ccc;
+            font-size: 1rem;
         }
 
         th {
-            background-color: #1565c0;
+            background-color: #00796b;
             color: white;
         }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
         .back-btn {
             display: block;
             width: 200px;
             margin: 30px auto;
-            padding: 10px 20px;
+            padding: 12px 20px;
             text-align: center;
             background-color: #00796b;
             color: white;
             text-decoration: none;
             border-radius: 8px;
             font-weight: bold;
+            transition: background-color 0.3s ease;
         }
 
         .back-btn:hover {
@@ -103,7 +145,10 @@
         <option value="approved" <%= "approved".equals(statusFilter) ? "selected" : "" %>>Approved</option>
         <option value="rejected" <%= "rejected".equals(statusFilter) ? "selected" : "" %>>Rejected</option>
     </select>
-    <input type="submit" value="Generate Report">
+    <input type="submit" class="generate_report_btn" value="Generate Report">
+    <a href="generate_leave_report?status=<%= statusFilter %>" class="btn-download">
+        Download PDF Report
+    </a>
 </form>
 
 <table>
@@ -154,6 +199,8 @@
     }
 %>
 </table>
-	<a class="back-btn" href="admin_dashboard.jsp">← Back to Dashboard</a>
+
+<a class="back-btn" href="admin_dashboard.jsp">← Back to Dashboard</a>
+
 </body>
 </html>

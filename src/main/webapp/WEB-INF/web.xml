@@ -43,7 +43,7 @@
   </servlet-mapping>
   <servlet>
         <servlet-name>GenerateLeaveReportServlet</servlet-name>
-        <servlet-class>GenerateLeaveReportServlet</servlet-class>
+        <servlet-class>servlet.GenerateLeaveReportServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
