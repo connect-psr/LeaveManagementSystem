@@ -39,22 +39,29 @@
         }
 
         .card {
-            background-color: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            text-decoration: none;
-            color: #00796b;
-            font-size: 18px;
-            font-weight: 600;
-            transition: transform 0.2s, background-color 0.3s;
-        }
-
-        .card:hover {
-            background-color: #e0f2f1;
-            transform: translateY(-5px);
-        }
+		    background-color: white;
+		    padding: 25px 20px;
+		    text-align: center;
+		    border-radius: 12px;
+		    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+		    text-decoration: none;
+		    color: #00796b;
+		    font-size: 17px;
+		    font-weight: 600;
+		    letter-spacing: 0.5px;
+		    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.3s ease;
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+		    align-items: center;
+		    min-height: 120px;
+		}
+		
+		.card:hover {
+		    background-color: #e0f2f1;
+		    transform: translateY(-6px);
+		    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+		}
 
         a.back-link {
             margin-top: 40px;
