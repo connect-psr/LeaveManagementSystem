@@ -41,9 +41,6 @@ The system allows **students** to apply for leave online, **faculty** to approve
 
 ---
 
-
----
-
 ## 🔐 Roles & Permissions
 
 | Role     | Description |
@@ -91,11 +88,7 @@ Open a terminal and run:
 
 ```bash
 `git clone https://github.com/yourusername/LeaveManagementSystem.git`
-
----
-
-## 🛠️ GitHub Setup
-
+```
 When cloning the repository, you will be prompted for your GitHub **username** and a **personal access token** (instead of a password).
 
 ### 📌 To generate a token:
@@ -128,6 +121,63 @@ This project uses **MySQL Connector J v9.3.0** for database connectivity.
 1. Right-click on the project → `Build Path → Configure Build Path`
 2. Go to the **Libraries** tab
 3. Click **Add JARs...**
-4. Navigate to the following location inside the project:
+4. Navigate to the following location inside the project: `LeaveManagementSystem/src/main/webapp/WEB-INF/lib/mysql-connector-j-9.3.0.jar`
+5. Select and **Add** the JAR
+6. Click **Apply and Close**
+
+---
+
+## 🛢️ MySQL Database Setup
+
+1. Open **MySQL Workbench** or **command line**
+2. Create the required database
+
+### 📂 SQL Script:
+
+Locate and execute the SQL script found at: `LeaveManagementSystem/resources/databaseStructure.txt`
+
+
+This will create the necessary tables and schema.
+
+### ⚠️ Important:
+
+Ensure your MySQL server is running with the following configuration:
+
+- **Host**: `localhost`
+- **Port**: `3306`
+
+Default database credentials used in the code:
+
+```java
+String url = "jdbc:mysql://localhost:3306/leave_management_db";
+String user = "root";
+String password = "root";
+```
+---
+
+▶️ Run the Project using Apache Tomcat
+Setup Apache Tomcat in Eclipse:
+
+Go to Servers tab → New → Server
+
+Choose Apache Tomcat (v10.x recommended for Java 21)
+
+Browse and select your downloaded Tomcat folder
+
+Add your project to the server
+
+Right-click the project → Run As → Run on Server
+
+Once deployed, open your browser and visit: `http://localhost:8080/LeaveManagementSystem/`
+
+---
+
+✅ You are now ready to use the Leave Management System locally!
+
+--- 
+
+🙋 Need Help?
+Raise an issue: 🔗 [Github Issue](https://github.com/connect-psr/LeaveManagementSystem/issues) 
+
 
 
