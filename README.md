@@ -57,7 +57,6 @@ The system allows **students** to apply for leave online, **faculty** to approve
 > - Student Leave Form  
 > - Faculty Dashboard  
 > - Admin Panel  
-> *(Use `![screenshot](path)` in GitHub if you have image files)*
 
 ---
 
