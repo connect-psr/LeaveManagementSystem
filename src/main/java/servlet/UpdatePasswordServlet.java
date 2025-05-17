@@ -11,7 +11,7 @@ public class UpdatePasswordServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // Get form data
+
         String oldPassword = request.getParameter("old_password");
         String newPassword = request.getParameter("new_password");
 
@@ -28,11 +28,9 @@ public class UpdatePasswordServlet extends HttpServlet {
         ResultSet rs = null;
 
         try {
-            // Database connection
             Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/leave_management", "root", "root");
 
-            // 1. Verify old password
             stmt = conn.prepareStatement("SELECT password FROM users WHERE username = ?");
             stmt.setString(1, username);
             rs = stmt.executeQuery();
@@ -41,7 +39,6 @@ public class UpdatePasswordServlet extends HttpServlet {
                 String currentPassword = rs.getString("password");
                 if (currentPassword.equals(oldPassword)) {
 
-                    // 2. Update to new password
                     stmt = conn.prepareStatement("UPDATE users SET password = ? WHERE username = ?");
                     stmt.setString(1, newPassword);
                     stmt.setString(2, username);
