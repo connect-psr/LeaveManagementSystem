@@ -1,6 +1,6 @@
 # 🎓 Leave Management System
 
-A web-based **Leave Management System** developed using **Java, JDBC, MySQL, HTML, CSS, and Servlet-JSP**, designed for managing student leave applications efficiently in an educational institution.
+A web-based **Leave Management System** developed using **Java, JDBC, MySQL, HTML, CSS, and Servlet-JSP**, designed for managing student/employees leave applications efficiently in an educational institution/organization.
 
 ## 📌 Project Overview
 
@@ -41,6 +41,93 @@ The system allows **students** to apply for leave online, **faculty** to approve
 
 ---
 
-## 🗂️ Folder Structure
+
+---
+
+## 🔐 Roles & Permissions
+
+| Role     | Description |
+|----------|-------------|
+| **Student** | Can apply for leave and check status |
+| **Faculty** | Can review, approve or reject leave |
+| **Admin**   | Manages users, views applications, generates reports |
+
+---
+
+## 📸 Screenshots
+
+> Add screenshots of:  
+> - Student Leave Form  
+> - Faculty Dashboard  
+> - Admin Panel  
+> *(Use `![screenshot](path)` in GitHub if you have image files)*
+
+---
+
+## 📝 How to Run
+
+Follow these steps to set up and run the Leave Management System on your local machine:
+
+---
+
+### 1️⃣ Install Eclipse IDE (Recommended)
+
+- Download and install **Eclipse IDE for Enterprise Java and Web Developers** from the official site:  
+  🔗 [https://www.eclipse.org/downloads/](https://www.eclipse.org/downloads/)
+
+- During setup:
+  - Ensure **Java 21 JDK** is already installed.
+  - You can download it from [Oracle JDK 21](https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html)
+  - Set Java 21 as default JDK in Eclipse via:  
+    `Window → Preferences → Java → Installed JREs → Add → Standard VM → Select JDK 21 folder → Finish`
+
+---
+
+### 2️⃣ Clone the GitHub Project and Import into Eclipse
+
+#### a. Clone the project from GitHub:
+
+Open a terminal and run:
+
+```bash
+`git clone https://github.com/yourusername/LeaveManagementSystem.git`
+
+---
+
+## 🛠️ GitHub Setup
+
+When cloning the repository, you will be prompted for your GitHub **username** and a **personal access token** (instead of a password).
+
+### 📌 To generate a token:
+1. Go to GitHub → **Settings**
+2. Click on **Developer Settings**
+3. Go to **Personal Access Tokens → Tokens (Classic)**
+4. Click **Generate new token**
+5. Enable the following scope:
+   - `repo`
+6. Copy the generated token and **save it somewhere safe**.
+7. Use this token as your password when cloning the repository.
+
+---
+
+## 📥 Import into Eclipse
+
+1. Open **Eclipse**
+2. Go to: `File → Import → General → Existing Projects into Workspace`
+3. Click **Next**
+4. Browse to the folder where you cloned the repo (`LeaveManagementSystem`)
+5. Select the project and click **Finish**
+
+---
+
+## ⚙️ Set Build Path and JDBC Connector
+
+This project uses **MySQL Connector J v9.3.0** for database connectivity.
+
+### To configure:
+1. Right-click on the project → `Build Path → Configure Build Path`
+2. Go to the **Libraries** tab
+3. Click **Add JARs...**
+4. Navigate to the following location inside the project:
 
 
