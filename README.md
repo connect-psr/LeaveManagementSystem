@@ -53,7 +53,11 @@ The system allows **students** to apply for leave online, **faculty** to approve
 
 ## 📸 Screenshots
 
-> Add screenshots of:  
+> ![Home Page](src/main/webapp/images/homePage.png)
+> ![Login Page](src/main/webapp/images/loginPage.png)
+> ![Student Dashboard](src/main/webapp/images/studentDashboard.png)
+> ![Apply Leave Page](src/main/webapp/images/applyLeavePage.png)
+> ![Pending Leaves](src/main/webapp/images/pendingLeaves.png)
 > - Student Leave Form  
 > - Faculty Dashboard  
 > - Admin Panel  
