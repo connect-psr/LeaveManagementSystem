@@ -63,7 +63,7 @@ The system allows **students** to apply for leave online, **faculty** to approve
 > ![List Of Leaves](src/main/webapp/images/listOfLeaves.png)
 > ![Admin Dashboard](src/main/webapp/images/adminDashboard.png)
 > ![Admin Rights Panel](src/main/webapp/images/adminRight.png)
-> ![Manage Users](src/main/webapp/images/manageUsers.png)
+> ![Manage Users](src/main/webapp/images/manageUserPage.png)
 > ![All Leaves](src/main/webapp/images/allLeaves.png)
 > ![Pending Leaves](src/main/webapp/images/pendingLeaves.png)
 > ![Password Update Page](src/main/webapp/images/passwordupdate.png)
