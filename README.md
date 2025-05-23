@@ -28,6 +28,16 @@ The system allows **students** to apply for leave online, **faculty** to approve
 
 ---
 
+## 👥 Team Members
+
+- 👩‍💻 [Prathameshsingh Umeshsingh Rajput]
+- 👨‍💻 [Nilesh Mangalsingh Chavhan]
+- 👩‍💻 [Swaraj Shivanand Bendke ] 
+
+> This project was developed as part of our academic curriculum.
+
+---
+
 ## 🧰 Tech Stack
 
 | Technology | Purpose |
