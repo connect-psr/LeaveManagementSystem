@@ -205,7 +205,7 @@ Once deployed, open your browser and visit: `http://localhost:8080/LeaveManageme
 
 Thanks to the following people who helped make this project possible:
 
-- [@Prathameshsingh Rajput](https://github.com/connect-psr)
+- [@Prathameshsingh Rajput](https://github.com/prathameshsingh-rajput)
 - [@Nilesh Chavhan](https://github.com/Nileshchavhan75)
 - [@Swaraj Bendke ](https://github.com/swaraj165)
 
