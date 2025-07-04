@@ -1,4 +1,4 @@
-# 🎓 Leave Management System
+# 🎓 SmartLeave
 
 A web-based **Leave Management System** developed using **Java, JDBC, MySQL, HTML, CSS, and Servlet-JSP**, designed for managing student/employees leave applications efficiently in an educational institution/organization.
 
